@@ -1,0 +1,110 @@
+﻿.hidden {display:none;}
+.block {display:block;}
+.inline-block {display:inline-block;}
+
+.txt-left {text-align:left;}
+.txt-center {text-align:center;}
+.txt-right {text-align:right;}
+
+.h-center {margin-left:auto !important; margin-right:auto !important;}
+
+.ltr {direction:ltr;}
+.rtl {direction:rtl;}
+
+.narrow {width:125px;}
+.wide {width:250px;}
+.wider {width:500px;}
+.widest {width:750px;}
+
+body {height:100vh; margin:0px; direction:rtl;}
+h1 {margin:0; font-size:34px;}
+h2 {margin:0; font-size:30px;}
+h3 {margin:0;}
+h4 {margin:0; font-weight:normal;}
+p {margin:0; padding:16px 0px;}
+hr {margin:0;}
+a {color:rgb(110,50,180); text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+.bold {font-weight:bold;}
+
+.main_form {height:100vh;}
+.pageHeader {position:relative; height:10vh; font-family:Arial; font-size:30px; text-align:center;}
+.pageHeader .huji_logo {position:absolute; top:50%; transform:translateY(-50%); right:20px; z-index:999;}
+.pageHeader .homepage_icon {position:absolute; top:50%; transform:translateY(-50%); left:20px; z-index:999;}
+.pageHeader h1 {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);}
+.pageContent {min-height:85vh; font-family:Arial; font-size:20px; text-align:center; position:relative;}
+.pageFooter {height:5vh; position:relative; bottom:0px;}
+.pageFooter .footer_items {display:block; padding:5px 20px;}
+.pageFooter .footer_items .footer_item {position:absolute; top:50%; transform:translateY(-50%); font-family:Arial; font-size:14px;}
+.pageFooter .footer_items .footer_item.copyrights {right:20px;}
+.pageFooter .footer_items .footer_item.contact_us {left:50%; transform:translate(-50%,-50%);}
+.pageFooter .footer_items .footer_item.last_updated {left:20px;}
+.errMessage {color:red;}
+.configErrMessage {padding:5px 0px; font-size:14px; color:red;}
+.button {margin:5px; padding:5px 20px; border-radius:10px; border:none; font-family:Arial; font-size:20px; background-color:rgba(100,190,222,0.7); border:1px solid rgba(100,190,222,0.9); cursor:pointer;}
+.button:hover {background-color:rgba(100,190,222,1);}
+.textbox {font-size:18px; margin:5px; border-radius:10px; border:1px solid rgba(0,0,0,0.5); padding:5px; box-sizing:border-box;}
+.textbox::-webkit-input-placeholder {font-size:16px; text-align:center; font-style:italic;}
+
+#div_main {direction:ltr;}
+#div_contact_us {direction:rtl; text-align:center; padding:20px;}
+
+.div_login {position:absolute; top:30%; left:50%; transform:translate(-50%,-50%);}
+.loginInfo {width:100px; display:inline-block;}
+
+#div_admin {direction:ltr; padding:20px;}
+#div_admin .adminSessionActions {padding:20px;}
+#div_admin .tblConfig {text-align:left;}
+#div_admin .tblConfig .tdConfigHeader {font-family:Calibri; font-size:16px; font-weight:normal;}
+#div_admin .tblConfig .tdConfig {padding:5px;}
+#div_admin .tblConfig .tdConfig .configInput {display:block; font-family:Arial; font-size:16px; border-width:1px; border-radius:5px; padding:5px 5px; box-sizing:border-box;}
+#div_admin .tblConfigView {}
+#div_admin .tblConfigView .tdConfig {background-color:rgba(190,190,190,0.1); border-radius:5px; font-size:15px; font-family:"Courier New";}
+
+.configItems {display:inline-block; margin:10px; padding:10px; background-color:rgba(190,190,190,0.1); border-radius:10px;}
+.configItems .configItemsExpName {margin:0px; background-color:rgba(135,175,200,0.1); border-radius:10px;}
+.configItems .configItem {display:inline-block; width:250px; height:94px; margin:10px; padding:10px; background-color:rgba(50,100,200,0.1); border:1px solid rgba(50,100,200,0.2); text-align:left; box-sizing:border-box; border-radius:10px;}
+.configItems .configItem .configItemHeader {margin:0px;}
+.configItems .configItem .configItemSubHeader {margin:0px; padding-top:5px; color:rgba(0,0,0,0.6);}
+.configItems .configItem .configItemButton {display:inline-block; margin:10px 5px 0px 0px; padding:3px 10px; border-radius:8px; font-size:12px; color:black; text-decoration:none; background-color:rgba(5,190,105,0.1); border:1px solid rgba(5,190,105,0.3);}
+.configItems .configItem .configItemButton:hover {background-color:rgba(5,190,105,0.4);}
+
+#div_experiment_main {position:relative; width:100%; height:85vh;}
+
+#div_startup,
+#div_demographics,
+#div_training_instructions,
+#div_training_trials,
+#div_testing_instructions,
+#div_testing_trials,
+#div_finish {width:100%; position:absolute; top:45%; left:50%; transform:translate(-50%,-50%);}
+
+#div_demographics .tblDemographics {margin:0 auto; text-align:right;}
+#div_demographics .tblDemographics .tdDemHeader {font-family:Calibri; font-size:16px; font-weight:normal;}
+#div_demographics .tblDemographics .tdDem {padding:5px;}
+#div_demographics .tblDemographics .tdDem .demInput {font-family:Arial; font-size:16px; border-width:1px; border-radius:5px; padding:5px 5px; box-sizing:border-box;}
+#div_demographics .tblDemographics .tdDem .demInput.demRemarks {width:300px; height:100px;}
+
+#div_training_panel,
+#div_testing_question_panel,
+#div_testing_answer_panel {position:relative; width:100%; height:100%;}
+
+#div_training_panel img,
+#div_testing_question_panel img {transform:scale(1.25,1.25);}
+
+#div_training_panel img#training_ambiance,
+#div_testing_question_panel img#testing_triplet_indicator1,
+#div_testing_question_panel img#testing_triplet_indicator2 {transform:scale(1.00,1.00);}
+
+.spidVal {width:200px; margin:0 auto; padding:15px; font-size:24px; font-weight:bold; background-color:rgb(250,230,180);}
+
+
+.ui-menu {position:absolute; padding:0; text-align:left; direction:ltr; background:rgba(255,255,255,0.8);}
+.ui-menu-item {margin:0; cursor:pointer; list-style:none;}
+.ui-menu-item-wrapper {position:relative; padding:3px 5px 3px 5px; font-family:Arial; font-size:14px;}
+.ui-menu-item-wrapper.ui-state-active {background:rgba(140,215,240,0.7);}
+.ui-helper-hidden-accessible {display:none;}
+
+
+.g-recaptcha>div {margin:0 auto;}

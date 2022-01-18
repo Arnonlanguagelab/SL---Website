@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <title></title>
+        <link href="/css/style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="/js/jquery-3.1.1.min.js" ></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/js/common.js" ></script>
+        <asp:ContentPlaceHolder id="ph_head" runat="server">
+            <!-- PAGE HEAD CONTENT -->
+        </asp:ContentPlaceHolder>
+        <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+    </head>
+    <body>
+        <form id="frmMain" runat="server" class="main_form">
+            <div class="pageHeader">
+                <a href="http://new.huji.ac.il" title="דף הבית של האוניברסיטה העברית" target="_blank"><img id="img_huji_logo" class="huji_logo" src="/img/huji_logo.png" alt="האוניברסיטה העברית בירושלים" /></a>
+                <asp:ContentPlaceHolder id="ph_header_text" runat="server">
+                    <!-- PAGE HEADER TEXT -->
+                </asp:ContentPlaceHolder>
+                <a id="lnk_home" href="/Default.aspx" title="דף הבית"><img id="img_homepage" class="homepage_icon" src="/img/home.png" alt="דף הבית" /></a>
+            </div>
+            <div class="pageContent">
+                <asp:ContentPlaceHolder id="ph_body" runat="server">
+                    <!-- PAGE BODY -->
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="pageFooter">
+                <hr />
+                <div class="footer_items">
+                    <span class="copyrights footer_item"><a href="http://new.huji.ac.il/page/406" target="_blank">© כל הזכויות שמורות לאוניברסיטה העברית בירושלים</a></span>
+                    <span class="contact_us footer_item"><a href="/ContactUs.aspx" target="_blank">צור קשר</a></span>
+                    <span class="last_updated footer_item">עודכן לאחרונה: 26.04.2017 09:15</span>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
